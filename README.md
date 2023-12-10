@@ -16,7 +16,7 @@ Android と Flutter のいいね問題を解決したので、iOS のいいね�
 
 [tfandkusu/flutter_architecture_sample](https://github.com/tfandkusu/flutter_architecture_sample)
 
-複数の画面にまたがるデータを持つ [Riverpod](https://riverpod.dev/) の [StateNotifeir](https://riverpod.dev/docs/providers/state_notifier_provider) に持たせて、画面固有の状態を持つ StateNotifier と合成したものを、画面の状態とします。
+複数の画面にまたがるデータを持つ [Riverpod](https://riverpod.dev/) の [StateNotifeir](https://riverpod.dev/docs/providers/state_notifier_provider) に持たせて、画面固有の状態を持つ StateNotifier と Provider で合成したものを、画面の状態とします。
 
 ※ 2022年に設計したので、[現在の Riverpod の書き方](https://riverpod.dev/docs/migration/from_state_notifier)では無いです。
 
