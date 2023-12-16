@@ -10,6 +10,7 @@ class MemberLocalDataSource {
 
     /**
      AsyncStream の yield を呼ぶタスク
+     TODO 1箇所でしか監視できないので、複数の yield するタスクが必要
      */
     private var yieldTask = { (_: [Member]) in
     }
