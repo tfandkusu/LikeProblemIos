@@ -22,4 +22,4 @@ jobs:
       # フォーマットチェック
       - run: mint run swiftformat --lint .
       # ビルドチェック
-      - run: xcodebuild -project LikeProblemIos.xcodeproj -scheme LikeProblemIos -destination 'platform=iOS Simulator,name=iPhone 15 Pro,OS=17.0' -derivedDataPath ./build build
+      - run: xcodebuild -allowProvisioningUpdates -project LikeProblemIos.xcodeproj -scheme LikeProblemIos -destination 'platform=iOS Simulator,name=iPhone 15 Pro,OS=17.0' -derivedDataPath ./build build
