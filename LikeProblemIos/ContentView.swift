@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  LikeProblemIos
-//
-//  Created by toya on 2023/12/10.
-//
-
 import ComposableArchitecture
 import SwiftUI
 

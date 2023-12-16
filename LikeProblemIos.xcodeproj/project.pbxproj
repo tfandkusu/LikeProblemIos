@@ -15,6 +15,10 @@
 		B2C5A4A52B25957F00D1FBC3 /* LikeProblemIosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C5A4A42B25957F00D1FBC3 /* LikeProblemIosUITests.swift */; };
 		B2C5A4A72B25957F00D1FBC3 /* LikeProblemIosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C5A4A62B25957F00D1FBC3 /* LikeProblemIosUITestsLaunchTests.swift */; };
 		B2C5A4B52B2DC62D00D1FBC3 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B2C5A4B42B2DC62D00D1FBC3 /* ComposableArchitecture */; };
+		B2C5A4B82B2E09CD00D1FBC3 /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = B2C5A4B72B2E09CD00D1FBC3 /* Fakery */; };
+		B2C5A4BA2B2E0A0400D1FBC3 /* MemberLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C5A4B92B2E0A0400D1FBC3 /* MemberLocalDataSource.swift */; };
+		B2C5A4BD2B2E164A00D1FBC3 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C5A4BC2B2E164A00D1FBC3 /* Member.swift */; };
+		B2C5A4BF2B2E1ABB00D1FBC3 /* MemberLocalDataSourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C5A4BE2B2E1ABB00D1FBC3 /* MemberLocalDataSourceTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,9 @@
 		B2C5A4A02B25957F00D1FBC3 /* LikeProblemIosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LikeProblemIosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C5A4A42B25957F00D1FBC3 /* LikeProblemIosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeProblemIosUITests.swift; sourceTree = "<group>"; };
 		B2C5A4A62B25957F00D1FBC3 /* LikeProblemIosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeProblemIosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B2C5A4B92B2E0A0400D1FBC3 /* MemberLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberLocalDataSource.swift; sourceTree = "<group>"; };
+		B2C5A4BC2B2E164A00D1FBC3 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		B2C5A4BE2B2E1ABB00D1FBC3 /* MemberLocalDataSourceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberLocalDataSourceTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2C5A4B82B2E09CD00D1FBC3 /* Fakery in Frameworks */,
 				B2C5A4B52B2DC62D00D1FBC3 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,10 +104,12 @@
 		B2C5A4882B25957D00D1FBC3 /* LikeProblemIos */ = {
 			isa = PBXGroup;
 			children = (
+				B2C5A4BC2B2E164A00D1FBC3 /* Member.swift */,
 				B2C5A4892B25957D00D1FBC3 /* LikeProblemIosApp.swift */,
 				B2C5A48B2B25957D00D1FBC3 /* ContentView.swift */,
 				B2C5A48D2B25957E00D1FBC3 /* Assets.xcassets */,
 				B2C5A48F2B25957E00D1FBC3 /* Preview Content */,
+				B2C5A4B92B2E0A0400D1FBC3 /* MemberLocalDataSource.swift */,
 			);
 			path = LikeProblemIos;
 			sourceTree = "<group>";
@@ -116,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				B2C5A49A2B25957F00D1FBC3 /* LikeProblemIosTests.swift */,
+				B2C5A4BE2B2E1ABB00D1FBC3 /* MemberLocalDataSourceTest.swift */,
 			);
 			path = LikeProblemIosTests;
 			sourceTree = "<group>";
@@ -147,6 +158,7 @@
 			name = LikeProblemIos;
 			packageProductDependencies = (
 				B2C5A4B42B2DC62D00D1FBC3 /* ComposableArchitecture */,
+				B2C5A4B72B2E09CD00D1FBC3 /* Fakery */,
 			);
 			productName = LikeProblemIos;
 			productReference = B2C5A4862B25957D00D1FBC3 /* LikeProblemIos.app */;
@@ -222,6 +234,7 @@
 			mainGroup = B2C5A47D2B25957D00D1FBC3;
 			packageReferences = (
 				B2C5A4B32B2DC62D00D1FBC3 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				B2C5A4B62B2E09CD00D1FBC3 /* XCRemoteSwiftPackageReference "Fakery" */,
 			);
 			productRefGroup = B2C5A4872B25957D00D1FBC3 /* Products */;
 			projectDirPath = "";
@@ -265,7 +278,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2C5A4BA2B2E0A0400D1FBC3 /* MemberLocalDataSource.swift in Sources */,
 				B2C5A48C2B25957D00D1FBC3 /* ContentView.swift in Sources */,
+				B2C5A4BD2B2E164A00D1FBC3 /* Member.swift in Sources */,
 				B2C5A48A2B25957D00D1FBC3 /* LikeProblemIosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2C5A4BF2B2E1ABB00D1FBC3 /* MemberLocalDataSourceTest.swift in Sources */,
 				B2C5A49B2B25957F00D1FBC3 /* LikeProblemIosTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -608,6 +624,14 @@
 				minimumVersion = 1.5.5;
 			};
 		};
+		B2C5A4B62B2E09CD00D1FBC3 /* XCRemoteSwiftPackageReference "Fakery" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vadymmarkov/Fakery";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -615,6 +639,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B2C5A4B32B2DC62D00D1FBC3 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		B2C5A4B72B2E09CD00D1FBC3 /* Fakery */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2C5A4B62B2E09CD00D1FBC3 /* XCRemoteSwiftPackageReference "Fakery" */;
+			productName = Fakery;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
